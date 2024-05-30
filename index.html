@@ -1,78 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title id="title">Calculadora Decimal Para Binário</title>
-</head>
-<body>
-    <main>
-        <section id="img">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title id="title">Calculadora Decimal Para Binário</title>
+    </head>
+    <body>
+        <main>
+            <div id="container">
 
-        </section>
-        <section id="calculator">
-            <form id="form">
-                <h1 id="title">
-                Calculadora Binário Decimal
-                </h1>
-            <div class="input-box">
-                <label for="teste">
-                Peso em Kg
-                </label>
-                <div class="input-field">
-                <i class="fa-solid fa-weight-hanging"></i>
-                <input type="number" id="weight" required>
-                <span>
-                Kg
-                </span>
+            <section id="img">
+
+            <img src="assets/images/calculadora conversao.svg">
+            
+            </section>
+
+            <section id="calculator">
+
+                <form id="form">
+
+                    <h1 id="title">
+
+                    Conversão decimal para binário
+                        </h1>
+
+                    <div class="input-box">
+
+                        <label for="Decimal">
+
+                        Decimal
+                        </label>
+
+                        <div class="input-field">
+
+                <input type="number" id="decimal" onkeyup="converter(this.value)" required>
+
+                    </div>
+
+                    </div>
+                    <div class="input-box">
+
+                    <label for="Binários">
+
+                    Binário - Resultado
+                    </label>
+
+                    <div class="input-field">
+
+                    <input type="number" id="Binário" disabled>
+
+                    </div>
+                    
+                    </div>
+                </form>
+                <div id="more_info">
+                    <a href="https://pt.wikihow.com/Converter-de-Decimal-para-Bin%C3%A1rio">
+                        Mais informações sobre como converter
+                    </a>
                 </div>
             </div>
-            <div class="input-box">
-            <label for="height">
-                Altura em metros
-            </label>
-            <div class="input-field">
-            <i class="fa solid fa-ruler">
-            <input type="number" id="height" required>
-            <span>
-                m
-            </span>
-            </div>
-            </div>
-            <button id="calculate">
-                Calcular
-            </button>
-            </form>
-            
-            <div id="infos">
-
-            </div>
-            <div id="result">
-
-            </div>
-            <div id ="bmi">
-                <span id="value">
-                
-                </span>
-                <span>Seu IMC</span>
-            </div>
-            <div id="description">
-                <span>
-
-                </span>
-            </div>
-            <div id="more_info">
-                <a href="https://mundoeducacao.uol.com.br/saude-bem-estar">
-                    Mais informações sobre o IMC
-                    <i class="fa-solid fa-arrow-up-right-from square">
-
-                    </i>
-                </a>
-            </div>
+            </section>
         </div>
-        </section>
-    </main>
-</body>
-</html>
+        </main>
+        <script src="assets/images/css/js/teste.js">
+        </script>
+    </body>
+    </html>
